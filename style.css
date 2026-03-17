@@ -415,39 +415,50 @@ nav {
   }
 
   .project-item {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    gap: 1.2rem;
-    padding: 2rem 1.5rem;
+    text-align: left;
+    gap: 1rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .project-icon,
+  .project-icon-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project-icon-placeholder {
+    font-size: 0.9rem;
   }
 
   .project-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .project-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
   }
 
   .project-info p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
   }
 
   .project-tags {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .project-arrow {
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
+    position: static;
+    transform: none;
+    margin-left: auto;
   }
 
   .project-item:hover .project-arrow {
-    transform: translateY(-50%) translateX(3px);
+    transform: translateX(3px);
   }
 }
