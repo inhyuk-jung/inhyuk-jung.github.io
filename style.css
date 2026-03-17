@@ -8,6 +8,8 @@
   --glass-border: rgba(255, 255, 255, 0.08);
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --transition: all 0.3s ease;
+  --ios-color: #007AFF;
+  --android-color: #3DDC84;
 }
 
 * {
@@ -25,7 +27,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -70,6 +74,7 @@ nav {
   font-weight: 800;
   background: linear-gradient(to right, #fff, #a0a0a0);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -150,15 +155,92 @@ nav {
   transform: translateY(0);
 }
 
-/* Footer */
-footer {
-  padding: 50px 0;
-  text-align: center;
-  border-top: 1px solid var(--glass-border);
-  color: var(--text-secondary);
+/* Links in Grid */
+.card-link {
+  display: block;
+  height: 100%;
 }
 
+/* Store Buttons */
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.store-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  width: 100%;
+  max-width: 200px;
+}
+
+.store-button.ios {
+  background: rgba(0, 122, 255, 0.1);
+  border-color: rgba(0, 122, 255, 0.3);
+  color: #58a6ff;
+}
+
+.store-button.ios:hover {
+  background: var(--ios-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 122, 255, 0.3);
+}
+
+.store-button.android {
+  background: rgba(61, 220, 132, 0.1);
+  border-color: rgba(61, 220, 132, 0.3);
+  color: #3ddc84;
+}
+
+.store-button.android:hover {
+  background: var(--android-color);
+  color: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(61, 220, 132, 0.3);
+}
+
+.store-button.github {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.store-button.github:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive Extra */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 3rem; }
-  .nav-links { display: none; }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .nav-content {
+    padding: 0 1rem;
+  }
+
+  .app-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .store-button {
+    max-width: 100%;
+  }
 }
