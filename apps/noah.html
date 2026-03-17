@@ -9,19 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-
+    <style>
+        :root {
+            --bg-color: #2B304B;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --nav-bg: rgba(43, 48, 75, 0.8);
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="container nav-content">
             <div class="logo"><a href="../index.html">INHYUK.LOG</a></div>
-            <div class="nav-links"><a href="../index.html#projects">Back to Projects</a></div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="index.html">Projects</a>
+            </div>
         </div>
     </nav>
     <main class="container">
         <header class="app-header reveal">
-            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <a href="index.html" class="back-link">← Back to Projects</a>
             <h1>노아 (Noah)</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">기도 시간 기록 및 기도 제목 관리</p>
             <div class="store-buttons" style="margin-top: 2rem;">
@@ -32,19 +45,20 @@
             </div>
         </header>
         <div class="app-content reveal">
-            <div style="background: rgba(43, 48, 75, 0.05); border-radius: 20px; padding: 2rem;">
-                <div class="app-image" style="background: rgba(43, 48, 75, 0.3); border-color: rgba(43, 48, 75, 0.5);">
+            <div
+                style="background: var(--glass-bg); border-radius: 20px; padding: 2rem; border: 1px solid var(--glass-border);">
+                <div class="app-image">
                     <img src="https://play-lh.googleusercontent.com/oWsiW-2pEQIhIHN7vy_ccb8Y3ADPyjk1mADdBNyyQdvPAXjtY3HdkGlNwsNdb07wG4cI=w832-h470-rw"
                         alt="Noah App Preview">
                 </div>
                 <article style="color: var(--text-secondary); line-height: 1.8;">
-                    <h2 style="color: #2B304B; filter: brightness(1.5);">Summary</h2>
+                    <h2>Summary</h2>
                     <p style="margin: 1.5rem 0;">
                         노아는 여러분의 매일의 기도 시간을 체계적으로 기록하고, 기도 제목을 효과적으로 관리할 수 있도록 돕는 신앙 생활 도구입니다.
                         하나님과 대화하는 소중한 시간을 기록으로 남겨 기도의 응답과 신앙의 성장을 체감할 수 있습니다.
                         기도의 평온함과 영적인 깊이를 더해주는 차분한 딥블루 테마로 구성되어 몰입을 돕습니다.
                     </p>
-                    <h2 style="color: #2B304B; filter: brightness(1.5);">Key Features</h2>
+                    <h2>Key Features</h2>
                     <ul style="margin: 1.5rem 0; padding-left: 1.2rem;">
                         <li><strong>기도 타이머</strong>: 집중해서 기도할 수 있도록 돕는 정교하고 아름다운 타이머</li>
                         <li><strong>기도 제목 리스트</strong>: 개인, 가족, 공동체를 위한 중보 기도 제목 관리</li>

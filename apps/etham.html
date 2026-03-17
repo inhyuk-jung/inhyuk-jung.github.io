@@ -9,19 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #E8D6B4;
+            --text-primary: #2C241B;
+            --text-secondary: #5C4F3E;
+            --glass-bg: rgba(255, 255, 255, 0.4);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --nav-bg: rgba(232, 214, 180, 0.8);
+        }
 
+        .logo,
+        .logo a,
+        .nav-links a,
+        .back-link {
+            -webkit-text-fill-color: initial;
+            color: #2C241B;
+            background: none;
+        }
+
+        .back-link {
+            border-color: rgba(44, 36, 27, 0.2);
+        }
+
+        .back-link:hover {
+            background: rgba(44, 36, 27, 0.1);
+            color: #000;
+        }
+
+        .store-button.ios {
+            color: #fff !important;
+        }
+
+        .store-button.android {
+            color: #000 !important;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="container nav-content">
             <div class="logo"><a href="../index.html">INHYUK.LOG</a></div>
-            <div class="nav-links"><a href="../index.html#projects">Back to Projects</a></div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="index.html">Projects</a>
+            </div>
         </div>
     </nav>
     <main class="container">
         <header class="app-header reveal">
-            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <a href="index.html" class="back-link">← Back to Projects</a>
             <h1>에담 (Etham)</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">가정예배 길잡이</p>
             <div class="store-buttons" style="margin-top: 2rem;">
@@ -32,20 +71,20 @@
             </div>
         </header>
         <div class="app-content reveal">
-            <div style="background: rgba(232, 214, 180, 0.05); border-radius: 20px; padding: 2rem;">
-                <div class="app-image"
-                    style="background: rgba(232, 214, 180, 0.15); border-color: rgba(232, 214, 180, 0.3);">
+            <div
+                style="background: var(--glass-bg); border-radius: 20px; padding: 2rem; border: 1px solid var(--glass-border);">
+                <div class="app-image">
                     <img src="https://play-lh.googleusercontent.com/hrtMSl2KXD1uPA8W3UsMvbW1LG9RsorwJDObHsfnJ9c_6EkCvfqFyTPr50AIy09ddw=w832-h470-rw"
                         alt="Etham App Preview">
                 </div>
                 <article style="color: var(--text-secondary); line-height: 1.8;">
-                    <h2 style="color: #E8D6B4;">Summary</h2>
+                    <h2>Summary</h2>
                     <p style="margin: 1.5rem 0;">
                         에담은 가정에서 함께 모여 드리는 예배가 더 풍성해질 수 있도록 찬양, 말씀, 나눔의 가이드를 제공하는 앱입니다.
                         바쁜 일상 속에서도 가족이 함께 신앙의 중심을 잡을 수 있도록 돕는 실무적인 길잡이 역할을 합니다.
                         따뜻한 베이지 톤을 통해 가정의 화목함과 아늑한 예배 분위기를 경험할 수 있습니다.
                     </p>
-                    <h2 style="color: #E8D6B4;">Key Features</h2>
+                    <h2>Key Features</h2>
                     <ul style="margin: 1.5rem 0; padding-left: 1.2rem;">
                         <li><strong>예배 순서 가이드</strong>: 찬양부터 합심 기도까지 매끄러운 예배 진행 지원</li>
                         <li><strong>묵상과 나눔</strong>: 가족이 함께 읽고 나눌 수 있는 성경 말씀과 짧은 묵상 질문 제공</li>

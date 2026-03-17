@@ -9,19 +9,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #6FA7C6;
+            --text-primary: #0F2537;
+            --text-secondary: #1C3C56;
+            --glass-bg: rgba(255, 255, 255, 0.3);
+            --glass-border: rgba(255, 255, 255, 0.4);
+            --nav-bg: rgba(111, 167, 198, 0.8);
+        }
 
+        .logo,
+        .logo a,
+        .nav-links a,
+        .back-link {
+            -webkit-text-fill-color: initial;
+            color: #0F2537;
+            background: none;
+        }
+
+        .back-link {
+            border-color: rgba(15, 37, 55, 0.2);
+        }
+
+        .back-link:hover {
+            background: rgba(15, 37, 55, 0.1);
+            color: #000;
+        }
+
+        .store-button.ios {
+            color: #fff !important;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="container nav-content">
             <div class="logo"><a href="../index.html">INHYUK.LOG</a></div>
-            <div class="nav-links"><a href="../index.html#projects">Back to Projects</a></div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="index.html">Projects</a>
+            </div>
         </div>
     </nav>
     <main class="container">
         <header class="app-header reveal">
-            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <a href="index.html" class="back-link">← Back to Projects</a>
             <h1>토브 (Tov)</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">직접 만드는 말씀카드</p>
             <div class="store-buttons" style="margin-top: 2rem;">
@@ -30,24 +65,22 @@
             </div>
         </header>
         <div class="app-content reveal">
-            <div style="background: rgba(111, 167, 198, 0.05); border-radius: 20px; padding: 2rem;">
-                <div class="app-image"
-                    style="display: flex; gap: 1rem; overflow-x: auto; background: rgba(111, 167, 198, 0.15); border-color: rgba(111, 167, 198, 0.3); height: auto; padding: 1rem;">
+            <div
+                style="background: var(--glass-bg); border-radius: 20px; padding: 2rem; border: 1px solid var(--glass-border);">
+                <div class="app-image" style="display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem;">
                     <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/d4/2d/13/d42d1344-3c2e-15ef-8aec-0059b077aeb6/c50d636a-f369-493c-9b28-46dba8c3a40b_1-1.png/460x996bb.webp"
-                        alt="Tov App Preview 1"
-                        style="height: 480px; width: auto; border-radius: 20px; border: 1px solid var(--glass-border);">
+                        alt="Tov App Preview 1" style="max-height: 480px; width: auto;">
                     <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/20/19/84/201984e4-4876-6f6d-383c-bf5d2d7af60c/b3153740-b62c-49c5-9304-6a56f46feb1e_1-2.png/460x996bb.webp"
-                        alt="Tov App Preview 2"
-                        style="height: 480px; width: auto; border-radius: 20px; border: 1px solid var(--glass-border);">
+                        alt="Tov App Preview 2" style="max-height: 480px; width: auto;">
                 </div>
                 <article style="color: var(--text-secondary); line-height: 1.8;">
-                    <h2 style="color: #6FA7C6;">Summary</h2>
+                    <h2>Summary</h2>
                     <p style="margin: 1.5rem 0;">
                         토브(Tov)는 사용자가 직접 원하는 성경 구절을 선택하고 아름다운 디자인의 말씀카드를 제작할 수 있게 해주는 감성 앱입니다.
                         단순히 폰트만 바꾸는 것이 아니라, 내가 원하는 분위기에 맞는 다채로운 배경 이미지를 조합하여 나만의 감성과 묵상을 시각화할 수 있습니다.
                         맑고 위로가 되는 블루 테마가 적용되어 텍스트와 이미지에 집중할 수 있도록 돕습니다.
                     </p>
-                    <h2 style="color: #6FA7C6;">Key Features</h2>
+                    <h2>Key Features</h2>
                     <ul style="margin: 1.5rem 0; padding-left: 1.2rem;">
                         <li><strong>자유로운 커스텀 제작</strong>: 타이포그래피, 고해상도 배경 이미지, 레이아웃을 조합하여 나만의 말씀카드 디자인</li>
                         <li><strong>소통과 공유의 공간</strong>: 다른 사용자들이 만든 공개 카드들을 둘러보고 '좋아요'로 영적인 공감대 형성</li>

@@ -9,19 +9,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F5F5F7;
+            --text-primary: #1D1D1F;
+            --text-secondary: #424245;
+            --glass-bg: rgba(255, 255, 255, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --nav-bg: rgba(245, 245, 247, 0.8);
+        }
 
+        .logo,
+        .logo a,
+        .nav-links a,
+        .back-link {
+            -webkit-text-fill-color: initial;
+            color: #1D1D1F;
+            background: none;
+        }
+
+        .back-link {
+            border-color: rgba(29, 29, 31, 0.2);
+        }
+
+        .back-link:hover {
+            background: rgba(29, 29, 31, 0.1);
+            color: #000;
+        }
+
+        .store-button.github {
+            background: #1D1D1F;
+            color: #FFF !important;
+        }
+
+        .store-button.github:hover {
+            background: #000;
+            color: #FFF !important;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="container nav-content">
             <div class="logo"><a href="../index.html">INHYUK.LOG</a></div>
-            <div class="nav-links"><a href="../index.html#projects">Back to Projects</a></div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="index.html">Projects</a>
+            </div>
         </div>
     </nav>
     <main class="container">
         <header class="app-header reveal">
-            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <a href="index.html" class="back-link">← Back to Projects</a>
             <h1>Code2Art</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">코드를 예술 작품으로 변환하는 프로젝트</p>
             <div class="store-buttons" style="margin-top: 2rem;">
@@ -30,21 +71,21 @@
             </div>
         </header>
         <div class="app-content reveal">
-            <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; padding: 2rem;">
-                <div class="app-image"
-                    style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+            <div
+                style="background: var(--glass-bg); border-radius: 20px; padding: 2rem; border: 1px solid var(--glass-border);">
+                <div class="app-image">
                     <img src="https://github.com/inhyuk-jung/code2art/raw/main/assets/good_1.png"
                         alt="Code2Art Masterpiece">
                 </div>
                 <article style="color: var(--text-secondary); line-height: 1.8;">
-                    <h2 style="color: #ffffff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+                    <h2 style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 0.5rem;">
                         Summary</h2>
                     <p style="margin: 1.5rem 0;">
                         당신의 코드를 예술로 승화시키세요. Code2Art는 단순한 코드 시각화를 넘어, 작성된 코드의 구조적 특징과 로직의 아름다움을 정밀하게 분석하여 위대한 거장들의 화풍으로
                         재해석된 고화질 추상화를 생성하는 혁신적인 웹 브라우저 예술 생성기입니다.
                         모든 분석은 로컬 환경에서 안전하게 이루어지며, 미니멀한 화이트/그레이 테마가 오롯이 당신의 코드 작품에 집중하게 해줍니다.
                     </p>
-                    <h2 style="color: #ffffff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+                    <h2 style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 0.5rem; margin-top: 2rem;">
                         Key Features</h2>
                     <ul style="margin: 1.5rem 0; padding-left: 1.2rem;">
                         <li><strong>최첨단 지능형 코드 분석</strong>: 브라우저 내장 로컬 AST 파싱 기술을 통해 복잡도, 모듈성 등 8대 예술적 지표를 안전하게 추출</li>

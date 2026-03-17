@@ -9,19 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #DCC9BC;
+            --text-primary: #33251D;
+            --text-secondary: #5A4A40;
+            --glass-bg: rgba(255, 255, 255, 0.4);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --nav-bg: rgba(220, 201, 188, 0.8);
+        }
 
+        .logo,
+        .logo a,
+        .nav-links a,
+        .back-link {
+            -webkit-text-fill-color: initial;
+            color: #33251D;
+            background: none;
+        }
+
+        .back-link {
+            border-color: rgba(51, 37, 29, 0.2);
+        }
+
+        .back-link:hover {
+            background: rgba(51, 37, 29, 0.1);
+            color: #000;
+        }
+
+        .store-button.ios {
+            color: #fff !important;
+        }
+
+        .store-button.android {
+            color: #000 !important;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="container nav-content">
             <div class="logo"><a href="../index.html">INHYUK.LOG</a></div>
-            <div class="nav-links"><a href="../index.html#projects">Back to Projects</a></div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="index.html">Projects</a>
+            </div>
         </div>
     </nav>
     <main class="container">
         <header class="app-header reveal">
-            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <a href="index.html" class="back-link">← Back to Projects</a>
             <h1>턴톤 (ToneTune)</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">말투를 바꿔주는 똑똑한 AI 비서</p>
             <div class="store-buttons" style="margin-top: 2rem;">
@@ -32,20 +71,20 @@
             </div>
         </header>
         <div class="app-content reveal">
-            <div style="background: rgba(220, 201, 188, 0.05); border-radius: 20px; padding: 2rem;">
-                <div class="app-image"
-                    style="background: rgba(220, 201, 188, 0.15); border-color: rgba(220, 201, 188, 0.3);">
+            <div
+                style="background: var(--glass-bg); border-radius: 20px; padding: 2rem; border: 1px solid var(--glass-border);">
+                <div class="app-image">
                     <img src="https://play-lh.googleusercontent.com/Z151-MoHmobVI-t_e-5G9QVzB4G_5ZAejHXESY4zhYpp2lRF-3zLiE2GsF-gz3MAajXjTSmA0boXcqgI9ryyog=w832-h470-rw"
                         alt="ToneTune App Preview">
                 </div>
                 <article style="color: var(--text-secondary); line-height: 1.8;">
-                    <h2 style="color: #DCC9BC;">Summary</h2>
+                    <h2>Summary</h2>
                     <p style="margin: 1.5rem 0;">
                         턴톤(ToneTune)은 작성한 텍스트의 말투와 톤을 인공지능이 상황에 맞게 자동으로 교정해주는 똑똑한 커뮤니케이션 비서입니다.
                         어려운 거래처로 보내는 비즈니스 메일부터, 오해를 풀기 위한 부드러운 사과문까지 사용자의 원래 의도는 완벽히 유지하면서 가장 적절하고 세련된 표현으로 다듬어줍니다.
                         지적이고 차분한 샌드베이지 테마가 적용되어 신뢰감을 더합니다.
                     </p>
-                    <h2 style="color: #DCC9BC;">Key Features</h2>
+                    <h2>Key Features</h2>
                     <ul style="margin: 1.5rem 0; padding-left: 1.2rem;">
                         <li><strong>상황별 AI 말투 변환</strong>: 정중한, 친근한, 단호한, 전문적인 등 10가지 이상의 맞춤 톤을 지원</li>
                         <li><strong>고도화된 문맥 분석</strong>: 단순한 동의어 교체가 아닌 대화의 전체 맥락을 이해한 자연스러운 문장 재생성</li>
