@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (projectListContainer) {
     const projects = [
       {
-        url: 'tov.html',
-        name: '토브 (Tov)',
-        desc: '직접 만드는 말씀카드',
-        icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6f/3e/28/6f3e28a1-81da-e825-5bce-d9bb0ca47cd3/AppIcon-1x_U007emarketing-0-5-0-0-85-220.png/400x400ia-75.webp',
-        tags: ['iOS']
+        url: 'noah.html',
+        name: '노아 (Noah)',
+        desc: '기도 시간 기록 및 기도 제목 관리',
+        icon: 'https://play-lh.googleusercontent.com/x0MXHIjbMIDrplaxoKvVKtlYaqzGiVC6at2_m_fWEMOTn6EftuWMMmaffva-XkztvpE=s128-rw',
+        tags: ['Android', 'iOS']
       },
       {
         url: 'ruach.html',
@@ -74,13 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         tags: ['Android', 'iOS']
       },
       {
-        url: 'noah.html',
-        name: '노아 (Noah)',
-        desc: '기도 시간 기록 및 기도 제목 관리',
-        icon: 'https://play-lh.googleusercontent.com/x0MXHIjbMIDrplaxoKvVKtlYaqzGiVC6at2_m_fWEMOTn6EftuWMMmaffva-XkztvpE=s128-rw',
-        tags: ['Android', 'iOS']
-      },
-      {
         url: 'tonetune.html',
         name: '턴톤 (ToneTune)',
         desc: '말투를 바꿔주는 똑똑한 AI 비서',
@@ -93,6 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
         desc: '코드를 예술 작품으로 변환하는 프로젝트',
         icon: null,
         tags: ['GitHub']
+      },
+      {
+        url: 'tov.html',
+        name: '토브 (Tov)',
+        desc: '직접 만드는 말씀카드',
+        icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6f/3e/28/6f3e28a1-81da-e825-5bce-d9bb0ca47cd3/AppIcon-1x_U007emarketing-0-5-0-0-85-220.png/400x400ia-75.webp',
+        tags: ['iOS']
       }
     ];
 
