@@ -245,8 +245,8 @@ nav {
 
 /* App Detail Pages Common Styles */
 .app-header {
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .back-link {
@@ -382,7 +382,7 @@ nav {
   }
 
   .section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .nav-content {
@@ -395,8 +395,8 @@ nav {
   }
 
   .app-header {
-    padding-top: 130px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .app-image {

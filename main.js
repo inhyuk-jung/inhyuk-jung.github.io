@@ -36,15 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Dynamic navbar background adjustment
   const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      nav.style.padding = '0.8rem 0';
-      nav.style.background = 'rgba(10, 10, 10, 0.95)';
-    } else {
-      nav.style.padding = '1.5rem 0';
-      nav.style.background = 'rgba(10, 10, 10, 0.8)';
-    }
-  });
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.style.padding = '0.8rem 0';
+        nav.style.background = 'rgba(10, 10, 10, 0.95)';
+      } else {
+        nav.style.padding = '1.5rem 0';
+        nav.style.background = 'rgba(10, 10, 10, 0.8)';
+      }
+    });
+  }
 
   // Project data rendering (for apps/index.html)
   const projectListContainer = document.getElementById('project-list-container');
