@@ -238,6 +238,41 @@ nav {
   transform: translateY(-2px);
 }
 
+/* App Detail Pages Common Styles */
+.app-header {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  opacity: 1;
+  transform: translateX(-5px);
+}
+
+.app-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.tag {
+  background: var(--glass-bg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: 1px solid var(--glass-border);
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
 /* Mobile Responsive Extra */
 @media (max-width: 768px) {
   .hero h1 {
@@ -257,7 +292,25 @@ nav {
     gap: 2rem;
   }
 
+  .app-header {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .app-image {
+    height: 300px;
+    /* 모바일에서 이미지 덜 부담스럽게 노출 */
+    margin-bottom: 1.5rem;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .store-button {
     max-width: 100%;
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
 }

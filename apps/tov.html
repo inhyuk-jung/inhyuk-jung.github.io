@@ -9,59 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        .app-header {
-            padding-top: 150px;
-            padding-bottom: 50px;
-        }
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            opacity: 0.6;
-            transition: all 0.3s;
-        }
-
-        .back-link:hover {
-            opacity: 1;
-            transform: translateX(-5px);
-        }
-
-        .app-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-        }
-
-        .app-image {
-            width: 100%;
-            height: 400px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-
-        .tag {
-            background: var(--glass-bg);
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            border: 1px solid var(--glass-border);
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        @media (max-width: 768px) {
-            .app-content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -78,11 +26,11 @@
             <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">직접 만드는 말씀카드</p>
             <div class="store-buttons" style="margin-top: 2rem;">
                 <a href="https://apps.apple.com/us/app/tov-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%A7%90%EC%94%80%EC%B9%B4%EB%93%9C/id1536329088"
-                    target="_blank" class="store-button ios">App Store (iOS)</a>
+                    target="_blank" class="store-button ios"> App Store</a>
             </div>
         </header>
         <div class="app-content reveal">
-            <div>
+            <div style="background: rgba(111, 167, 198, 0.05); border-radius: 20px; padding: 2rem;">
                 <div class="app-image"
                     style="display: flex; gap: 1rem; overflow-x: auto; background: rgba(111, 167, 198, 0.15); border-color: rgba(111, 167, 198, 0.3); height: auto; padding: 1rem;">
                     <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/d4/2d/13/d42d1344-3c2e-15ef-8aec-0059b077aeb6/c50d636a-f369-493c-9b28-46dba8c3a40b_1-1.png/460x996bb.webp"
@@ -95,26 +43,19 @@
                 <article style="color: var(--text-secondary); line-height: 1.8;">
                     <h2 style="color: #6FA7C6;">Summary</h2>
                     <p style="margin: 1.5rem 0;">
-                        사용자가 직접 성경 구절을 선택하고 아름다운 디자인의 말씀카드를 제작할 수 있는 앱입니다.
-                        단순히 폰트만 바꾸는 것이 아니라, 분위기에 맞는 배경 이미지를 선택하고 나만의 감성을 담아 말씀을 시각화할 수 있습니다.
+                        토브(Tov)는 사용자가 직접 원하는 성경 구절을 선택하고 아름다운 디자인의 말씀카드를 제작할 수 있게 해주는 감성 앱입니다.
+                        단순히 폰트만 바꾸는 것이 아니라, 내가 원하는 분위기에 맞는 다채로운 배경 이미지를 조합하여 나만의 감성과 묵상을 시각화할 수 있습니다.
+                        맑고 위로가 되는 블루 테마가 적용되어 텍스트와 이미지에 집중할 수 있도록 돕습니다.
                     </p>
                     <h2 style="color: #6FA7C6;">Key Features</h2>
                     <ul style="margin: 1.5rem 0; padding-left: 1.2rem;">
-                        <li><strong>커스텀 제작</strong>: 다양한 폰트와 배경 이미지를 사용하여 나만의 말씀카드 완성</li>
-                        <li><strong>공유 공간</strong>: 다른 사람들이 만든 공개 카드들을 둘러보고 좋아요로 공감하기</li>
-                        <li><strong>지속적인 업데이트</strong>: 새로운 배경 이미지와 고해상도 로고, 폰트 지속 추가</li>
-                        <li><strong>쉬운 저장 및 공유</strong>: 제작 후 즉시 사진첩 저장 및 SNS 공유 가능</li>
+                        <li><strong>자유로운 커스텀 제작</strong>: 타이포그래피, 고해상도 배경 이미지, 레이아웃을 조합하여 나만의 말씀카드 디자인</li>
+                        <li><strong>소통과 공유의 공간</strong>: 다른 사용자들이 만든 공개 카드들을 둘러보고 '좋아요'로 영적인 공감대 형성</li>
+                        <li><strong>지속적인 리소스 업데이트</strong>: 새로운 배경 이미지 팩과 고해상도 로고, 다양한 감성 폰트를 지속적으로 추가 지원</li>
+                        <li><strong>쉬운 저장 및 외부 공유</strong>: 완성된 말씀카드를 즉시 기기 사진첩에 저장하거나 카카오톡 등 외부 SNS로 간편하게 공유 가능</li>
                     </ul>
                 </article>
             </div>
-            <aside>
-                <div class="card" style="border-color: rgba(111, 167, 198, 0.3);">
-                    <h3 style="color: #6FA7C6;">Information</h3>
-                    <p style="font-size: 0.9rem; margin-top: 1rem;">
-                        맑고 위로가 되는 블루 테마(#6FA7C6)는 말씀이 주는 소망을 의미합니다.
-                    </p>
-                </div>
-            </aside>
         </div>
     </main>
     <footer style="margin-top: 100px;">
