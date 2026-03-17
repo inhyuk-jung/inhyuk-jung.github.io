@@ -143,12 +143,10 @@ nav {
 .app-image {
   width: 100%;
   height: auto;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  overflow: hidden;
   padding: 0;
   background: transparent !important;
   border: none !important;
@@ -157,6 +155,7 @@ nav {
 .app-image img {
   width: 100%;
   height: auto;
+  max-height: 500px;
   display: block;
   object-fit: contain;
   border-radius: 20px;
@@ -287,6 +286,80 @@ nav {
   display: inline-block;
 }
 
+/* Project List (apps/index.html) */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.project-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 22.5%;
+  /* Apple HIG 스타일 둥근 모서리 추구 */
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon-placeholder {
+  width: 84px;
+  height: 84px;
+  border-radius: 22.5%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #eee, #999);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-info {
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-primary);
+}
+
+.project-info p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+
 /* Mobile Responsive Extra */
 @media (max-width: 768px) {
   .hero h1 {
@@ -324,5 +397,16 @@ nav {
     max-width: 100%;
     width: 100%;
     margin-bottom: 0.5rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
   }
 }
