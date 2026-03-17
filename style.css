@@ -27,7 +27,7 @@ body {
 }
 
 html {
-  scroll-padding-top: 120px;
+  scroll-padding-top: 40px;
 }
 
 /* Typography */
@@ -245,7 +245,7 @@ nav {
 
 /* App Detail Pages Common Styles */
 .app-header {
-  padding-top: 180px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 
@@ -304,6 +304,7 @@ nav {
   padding: 1.5rem;
   border-radius: 20px;
   transition: var(--transition);
+  position: relative;
 }
 
 .project-item:hover {
@@ -359,6 +360,20 @@ nav {
   flex-wrap: wrap;
 }
 
+.project-arrow {
+  color: var(--text-secondary);
+  opacity: 0.5;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.project-item:hover .project-arrow {
+  opacity: 1;
+  color: var(--text-primary);
+  transform: translateX(3px);
+}
+
 
 /* Mobile Responsive Extra */
 @media (max-width: 768px) {
@@ -401,12 +416,38 @@ nav {
 
   .project-item {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 1.2rem;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .project-info h3 {
     font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .project-tags {
+    justify-content: center;
+  }
+
+  .project-arrow {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .project-item:hover .project-arrow {
+    transform: translateY(-50%) translateX(3px);
   }
 }
