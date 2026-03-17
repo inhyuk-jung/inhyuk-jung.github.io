@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool App | Inhyuk Jung</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        .app-header {
+            padding-top: 150px;
+            padding-bottom: 50px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            opacity: 0.6;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            transform: translateX(-5px);
+        }
+
+        .app-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .app-image {
+            width: 100%;
+            height: 400px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            background: var(--glass-bg);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            border: 1px solid var(--glass-border);
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .app-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <div class="logo"><a href="../index.html">INHYUK.LOG</a></div>
+            <div class="nav-links">
+                <a href="../index.html#projects">Back to Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="app-header reveal">
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <h1>Cool App</h1>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem;">사용자의 일상을 편리하게 만드는 혁신적인
+                애플리케이션입니다.</p>
+        </header>
+
+        <div class="app-content reveal">
+            <div>
+                <div class="app-image">
+                    <span style="opacity: 0.3;">주요 기능 캡처 이미지 / 영상</span>
+                </div>
+                <article style="color: var(--text-secondary); line-height: 1.8;">
+                    <h2>Summary</h2>
+                    <p style="margin: 1.5rem 0;">
+                        이것은 샘플 프로젝트입니다. 여기에 프로젝트의 배경, 목표, 그리고 해결한 문제에 대해 작성하십시오.
+                        예를 들어, "이 앱은 반복적인 업무를 자동화하기 위해 개발되었습니다." 와 같이 시작할 수 있습니다.
+                    </p>
+                    <h2>Key Features</h2>
+                    <ul style="margin: 1rem 1.5rem;">
+                        <li>강력한 데이터 분석 대시보드</li>
+                        <li>실시간 협업을 위한 클라우드 동기화</li>
+                        <li>사용자 맞춤형 테마 및 위젯 기능</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside>
+                <div class="card">
+                    <h3>Information</h3>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Tech Stack</p>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Prisma</span>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Links</p>
+                        <a href="#" style="color: var(--accent-color); text-decoration: underline;">Live Demo</a><br>
+                        <a href="#" style="color: var(--accent-color); text-decoration: underline;">GitHub
+                            Repository</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <p>&copy; 2026 Jung Inhyuk. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
