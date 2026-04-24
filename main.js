@@ -53,6 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (projectListContainer) {
     const projects = [
       {
+        url: 'screwtape_letters.html',
+        name: '스크루테이프의 편지',
+        desc: '나를 무너뜨리기 위한 악마의 밀서 확인하기',
+        icon: '../assets/images/apps/screwtape_letters_logo.png',
+        tags: ['Web']
+      },
+      {
         url: 'noah.html',
         name: '노아 (Noah)',
         desc: '기도 시간 기록 및 기도 제목 관리',

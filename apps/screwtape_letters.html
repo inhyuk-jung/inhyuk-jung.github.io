@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크루테이프의 편지 | Inhyuk Jung</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #aaaaaa;
+            --accent-color: #ff4d4d;
+            --glass-bg: rgba(30, 30, 30, 0.7);
+            --glass-border: rgba(255, 77, 77, 0.2);
+            --nav-bg: rgba(10, 10, 10, 0.8);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+        }
+
+        .logo,
+        .logo a,
+        .nav-links a,
+        .back-link {
+            color: var(--text-primary);
+            background: none;
+        }
+
+        .back-link {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .btn-web {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+            box-shadow: 0 4px 15px rgba(255, 77, 77, 0.2);
+        }
+
+        .btn-web:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 77, 77, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .app-image img {
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            border: 1px solid var(--glass-border);
+        }
+
+        .summary-quote {
+            margin: 2rem 0;
+            font-style: italic;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            background: rgba(255, 77, 77, 0.05);
+            border-radius: 0 12px 12px 0;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .app-header {
+            padding-top: 100px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        .store-buttons {
+            justify-content: center;
+        }
+
+        h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-list li::before {
+            content: '🕯️';
+            position: absolute;
+            left: 0;
+            font-size: 0.9rem;
+        }
+
+        aside .card {
+            border-color: var(--glass-border);
+        }
+
+        .aside-tag {
+            background: rgba(255, 77, 77, 0.1);
+            color: var(--accent-color);
+            border: 1px solid rgba(255, 77, 77, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="app-header reveal">
+            <div style="text-align: left;">
+                <a href="index.html" class="back-link">← Back to Projects</a>
+            </div>
+            <h1>스크루테이프의 편지</h1>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 1.2rem; font-weight: 300;">나를 무너뜨리기 위한
+                악마의 밀서 확인하기</p>
+            <div class="store-buttons">
+                <a href="https://screwtape-letters.vercel.app/" target="_blank" class="btn-web">Web link</a>
+            </div>
+        </header>
+
+        <div class="app-content reveal">
+            <div>
+                <div class="app-image">
+                    <img src="../assets/images/apps/screwtape_letters_screenshot.png"
+                        alt="Screwtape Letters Screenshot">
+                </div>
+
+                <article style="color: var(--text-secondary); line-height: 1.8;">
+                    <h2>Summary</h2>
+                    <p style="margin: 1.5rem 0; color: var(--text-primary); font-size: 1.2rem; font-weight: 500;">
+                        혹시 느껴본 적 있나요? 나의 가장 은밀한 약점을 파고드는 누군가의 시선을... 🕯️
+                    </p>
+                    <p style="margin: 1.5rem 0;">
+                        C.S. 루이스의 명작 『스크루테이프의 편지』를 모티프로 한 1:1 맞춤형 영적 진단 서비스. 125가지 페르소나 모델을 통해, 악마 스크루테이프가 조카 웜우드에게 보내는
+                        '나를 무너뜨리기 위한 전략 회의'를 엿들어보세요.
+                    </p>
+
+                    <div class="summary-quote">
+                        "이 녀석아, 환자가 요즘 신앙에 열심이지 않느냐!" <br>
+                        때로는 격렬한 질책으로, 때로는 교활한 칭찬으로 내 영혼의 현주소를 날카롭게 꿰뚫어 봅니다.
+                    </div>
+
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>125가지 페르소나 모델</strong>: 정교하게 설계된 질문을 통해 당신만을 위한 악마의 전략을 도출합니다.</li>
+                        <li><strong>C.S. 루이스 오마주</strong>: 원작의 문체와 분위기를 현대적으로 재해석하여 깊이 있는 묵상을 돕습니다.</li>
+                        <li><strong>몰입감 있는 UI/UX</strong>: 어둡고 비밀스러운 분위기의 디자인으로 악마의 밀서를 읽는 듯한 경험을 선사합니다.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside>
+                <div class="card" style="background: var(--glass-bg); padding: 1.5rem; border-radius: 20px;">
+                    <h3 style="margin-bottom: 1.5rem;">Project Info</h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            Category</p>
+                        <span class="tag aside-tag">Web Service</span>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            Tech Stack</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.8rem;">
+                            Links</p>
+                        <a href="https://screwtape-letters.vercel.app/" target="_blank"
+                            style="color: var(--accent-color); display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+                            Live Demo
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer style="margin-top: 100px; padding-bottom: 50px; text-align: center;">
+        <div class="container" style="opacity: 0.5;">
+            <p>&copy; 2026 Jung Inhyuk. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
